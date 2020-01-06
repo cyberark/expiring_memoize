@@ -1,5 +1,6 @@
 The MIT License (MIT)
 
+Copyright (c) 2019 Rafał Rzepecki
 Copyright (c) 2020 CyberArk Software Ltd. All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
