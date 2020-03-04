@@ -1,0 +1,4 @@
+#!/bin/bash -eu
+
+docker build -f Dockerfile.test -t expiring_memoize .
+docker run --rm -v "$(pwd):/src" expiring_memoize rake spec

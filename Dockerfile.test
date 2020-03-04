@@ -1,0 +1,14 @@
+FROM ruby:2.5
+
+RUN mkdir /src
+WORKDIR /src
+
+COPY expiring_memoize.gemspec /src
+COPY Gemfile /src
+COPY lib/expiring_memoize/version.rb /src/lib/expiring_memoize/
+
+RUN bundle install
+
+COPY . /src/
+
+CMD [ "rake", "spec" ]
