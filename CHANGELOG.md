@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Security
+
+- upgrade Bundler to 2.1.4 to resolve CVE-2019-3881
+  [cyberark/expiring_memoize#2](https://github.com/cyberark/expiring_memoize/issues/2)
+
 ## [0.1.1] - 2020-03-04
 
 ### Changed
