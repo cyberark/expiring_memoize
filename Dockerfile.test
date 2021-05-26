@@ -1,5 +1,6 @@
 FROM ruby:2.5
 
+ENV BUNDLER_VERSION 2.2.18
 RUN mkdir /src
 WORKDIR /src
 
@@ -7,7 +8,7 @@ COPY expiring_memoize.gemspec /src
 COPY Gemfile /src
 COPY lib/expiring_memoize/version.rb /src/lib/expiring_memoize/
 
-RUN bundle install
+RUN gem install bundler:$BUNDLER_VERSION && bundle install
 
 COPY . /src/
 
