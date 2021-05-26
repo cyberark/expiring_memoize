@@ -19,7 +19,7 @@ pipeline {
 
     // Only publish to RubyGems if branch is 'master'
     stage('Publish to RubyGems?') {
-      agent { label 'releaser-v2' }
+      agent { label 'executor-v2' }
 
       when {
         branch 'master'
